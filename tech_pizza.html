@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Tech Pizza</title>
+	<meta http-equiv="Content-Type" Content="text/html; charset=UTF-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="tech_pizza.js"></script>
+	<link rel="stylesheet" href="tech_pizza.css">
+</head>
+<body>
+	<div id="MenuChoices">
+		<h1 class="select">Welcome to Tech Pizza</h1><br><br>
+		<form id="pizzaMenu">
+			<!-- Order Instructions CARD -->
+			<div class="card">
+				<div class="instructionMenu">
+					<header class="headers">
+						<h1>Please Select from the Following and Push<br>Order Here:</h1>
+					</header>
+				</div>
+			</div><br>
+			
+			<!-- /Order Instructions CARD -->
+			
+			<!-- Pizza Size CARD -->
+			<div class="card">
+				<div class="sizeMenu">
+					<header class="headers">
+						<h1>Please Select Your Preferred Size:</h1>
+					</header>
+					<div class="container">
+						<div class="inp">
+							<input class="size" id="personal" type="radio" name="size" value="Personal Pizza" /> 
+							<label for="personal">Personal Pizza</label>
+						</div>
+						<div class="inp">
+							<input class="size" id="medium" type="radio" name="size" value="Medium Pizza" />
+							<label for="medium">Medium Pizza</label>
+						</div>
+						<div class="inp">
+							<input class="size" id="large" type="radio" name="size" value="Large Pizza" />
+							<label for="large">Large Pizza</label>
+						</div>
+						<div class="inp">
+							<input class="size" id="xlarge" type="radio" name="size" value="Extra Large Pizza" />
+							<label for="xlarge">Extra Large Pizza</label>
+						</div>
+					</div>
+				</div>
+			</div><br>
+			<!-- /Pizza Size CARD -->
+
+			<!-- Choice of Cheese CARD -->
+			<div class="card">
+				<div class="cheeseMenu">
+					<header class="headers">
+					  <h1>Please Select How Much Cheese You Would Like on Your Pizza:</h1>
+					</header>
+					<div class="container">
+						<div class="inp">
+							<input id="btnRegular" type="radio" name="cheese" value="Regular" />
+							<label for="btnRegular">Regular</label>
+						</div>
+						<div class="inp">
+							<input id="btnExtra" type="radio" name="cheese" value="Extra" />
+							<label for="btnExtra">Extra</label>
+						</div>
+						<div class="inp">
+							<input id="btnNoC" type="radio" name="cheese" value="None" />
+							<label for="btnNoC">None</label>
+						</div>
+					</div>
+				</div>
+			</div><br>
+			<!-- Choice of Cheese CARD -->
+
+			<!-- Choice of Sauce CARD -->
+			<div class="card">
+				<div class="sauceMenu">
+					<header class="headers">
+					  <h1>Please Select What Sauce You Would Like on Your Pizza:</h1>
+					</header>
+					<div class="container">
+						<div class="inp">
+							<input id="btnMarinara" type="radio" name="sauce" value="Marinara" />
+							<label for="btnMarinara">Marinara</label>
+						</div><!--/inp-->
+						<div class="inp">
+							<input id="btnWhite" type="radio" name="sauce" value="White" />
+							<label for="btnWhite">White</label>
+						</div><!--/inp-->
+						<div class="inp">
+							<input id="btnBbq" type="radio" name="sauce" value="BBQ" />
+							<label for="btnBbq">BBQ</label>
+						</div><!--/inp-->
+						<div class="inp">
+							<input id="btnNoS" type="radio" name="sauce" value="No Sauce" />
+							<label for="btnNoS">No Sauce</label>
+						</div><!--/inp-->
+					</div>
+				</div>
+			</div><br>
+			<!-- /Choice of Sauce CARD -->
+
+			<!-- Choice of Crust CARD -->
+			<div class="card">
+				<div class="crustMenu">
+					<header class="headers">
+						<h1>Please Select The Crust You Would Like on Your Pizza:</h1>
+					</header>
+					<div class="container">
+						<div class="inp">
+							<input id="btnPlain" type="radio" name="crust" value="Plain" />
+							<label for="btnPlain">Plain</label>
+						</div><!--/inp-->
+						<div class="inp">
+							<input id="btnGarlic" type="radio" name="crust" value="Garlic Butter" />
+							<label for="btnGarlic">Garlic Butter</label>
+						</div><!--/inp-->
+						<div class="inp">
+							<input id="btnCheese" type="radio" name="crust" value="Cheese Stuffed" />
+							<label for="btnCheese">Cheese Stuffed</label>
+						</div><!--/inp-->
+						<div class="inp">
+							<input id="btnSpicy" type="radio" name="crust" value="Spicy" />
+							<label for="btnSpicy">Spicy</label>
+						</div><!--/inp-->
+						<div class="inp">
+							<input id="btnHouse" type="radio" name="crust" value="House Special" />
+							<label for="btnHouse">House Special</label>
+						</div><!--/inp-->
+					</div>
+				</div>
+			</div><br>
+			<!-- /Choice of Crust CARD -->
+
+			<!-- Choice of Veggies CARD-->
+			<div class="card">
+				<div class="veggieMenu">
+					<header class="headers">
+					  <h1>Please Select Your Choice of veggies:</h1>
+					</header>
+					<div class="container">
+						<div class="inp">
+							<input class="veggie" id="tomato" type="checkbox" name="veggie" value="Tomatoes" />
+							<label for="tomato">Tomatoes</label>
+						</div><!--/inp-->
+						<div class="inp">
+							<input class="veggie" id="onions" type="checkbox" name="veggie" value="Onions" />
+							<label for="onions">Onions</label>
+						</div><!--/inp-->
+						<div class="inp">
+							<input class="veggie" id="olives" type="checkbox" name="veggie" value="Olives" />
+							<label for="olives">Olives</label>
+						</div><!--/inp-->
+						<div class="inp">
+							<input class="veggie" id="peppers" type="checkbox" name="veggie" value="Green Peppers" />
+							<label for="peppers">Peppers</label>
+						</div><!--/inp-->
+						<div class="inp">
+							<input class="veggie" id="mushrooms" type="checkbox" name="veggie" value="Mushrooms" />
+							<label for="mushrooms">Mushrooms</label>
+						</div><!--/inp-->
+						<div class="inp">
+							<input class="veggie" id="pineapple" type="checkbox" name="veggie" value="Pineapple" />
+							<label for="pineapple">Pineapple</label>
+						</div><!--/inp-->
+						<div class="inp">
+							<input class="veggie" id="spinach" type="checkbox" name="veggie" value="Spinach" />
+							<label for="spinach">Spinach</label>
+						</div><!--/inp-->
+						<div class="inp">
+							<input class="veggie" id="jalapeno" type="checkbox" name="veggie" value="Jalapeño" />
+							<label for="jalapeno">Jalapeño</label>
+						</div><!--/inp-->
+					</div>
+				</div>
+			</div><br>
+			<!-- /Choice of Veggies CARD -->
+
+			<!-- Choice of meat CARD -->
+			<div class="card">
+				<div class="meatMenu">
+					<header class="headers">
+						<h1>Please Select Your Choice of Meat:</h1>
+					</header>
+					<div class="container">
+						<div class="inp">
+							<input class="meat" id="pepperoni" type="checkbox" name="meat" value="Pepperoni" />
+							<label for="pepperoni">Pepperoni</label>
+						</div><!--/inp-->
+						<div class="inp">
+							<input class="meat" id="sausage" type="checkbox" name="meat" value="Sausage" />
+							<label for="sausage">Sausage</label>
+						</div><!--/inp-->
+						<div class="inp">
+							<input class="meat" id="bacon" type="checkbox" name="meat" value="Canadian Bacon" />
+							<label for="bacon">Canadian Bacon</label>
+						</div><!--/inp-->
+						<div class="inp">
+							<input class="meat" id="beef" type="checkbox" name="meat" value="Ground Beef" />
+							<label for="beef">Ground Beef</label>
+						</div><!--/inp-->
+						<div class="inp">
+							<input class="meat" id="anchovy" type="checkbox" name="meat" value="Anchovy" />
+							<label for="anchovy">Anchovy</label>
+						</div><!--/inp-->
+						<div class="inp">
+							<input class="meat" id="chicken" type="checkbox" name="meat" value="Chicken" />
+							<label for="chicken">Chicken</label>
+						</div><!--/inp-->
+					</div>
+				</div>
+			</div>
+			<!-- /Choice of meat CARD -->
+		</form><br><br>
+		
+		<!-- Place Order Button -->
+		<input class="push" id="btnPlaceOrder" type="button" onclick="getReceipt();" value="PLACE ORDER"></input><br><br>
+		<!-- /Place Order Button -->
+		
+		<!-- Receipt CARD --> 
+		<div class="hide" id="receipt">
+			<div class="card">
+				<div class="container" id="total">
+					<header class="headers">
+						<h1>Please Review Your Order Below:</h1>
+					</header>
+				</div>
+			</div>
+		</div>
+		<!-- /Receipt CARD -->
+		
+		
+	</div>
+</body>
+</html>
